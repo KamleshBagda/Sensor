@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Sensor/static/css/main.84603fd1.css",
-    "main.js": "/Sensor/static/js/main.c39fcc86.js",
+    "main.css": "/Sensor/static/css/main.4a4e9ac3.css",
+    "main.js": "/Sensor/static/js/main.7fe50eb9.js",
     "static/js/592.6233e6de.chunk.js": "/Sensor/static/js/592.6233e6de.chunk.js",
     "static/media/carousel_img9.jpg": "/Sensor/static/media/carousel_img9.7e8bd1a98770766ef7a9.jpg",
     "static/media/carousel_img5.jpg": "/Sensor/static/media/carousel_img5.93e74fb60609073ff459.jpg",
     "static/media/carousel_img6.jpg": "/Sensor/static/media/carousel_img6.36656899ad158beeb83e.jpg",
     "index.html": "/Sensor/index.html",
-    "main.84603fd1.css.map": "/Sensor/static/css/main.84603fd1.css.map",
-    "main.c39fcc86.js.map": "/Sensor/static/js/main.c39fcc86.js.map",
+    "main.4a4e9ac3.css.map": "/Sensor/static/css/main.4a4e9ac3.css.map",
+    "main.7fe50eb9.js.map": "/Sensor/static/js/main.7fe50eb9.js.map",
     "592.6233e6de.chunk.js.map": "/Sensor/static/js/592.6233e6de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84603fd1.css",
-    "static/js/main.c39fcc86.js"
+    "static/css/main.4a4e9ac3.css",
+    "static/js/main.7fe50eb9.js"
   ]
 }
