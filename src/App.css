@@ -1,38 +1,445 @@
-.App {
+/* carousel size  */
+@media screen and (max-width:2200px) {
+  .carouselbox {
+    height: 600px !important;
+    object-fit: cover !important;
+    padding: 20px;
+  }
+}
+
+/* carousel css end */
+
+
+
+
+/* login page css */
+
+.loginbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../public/images/carousel_img9.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper1 {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper1 h1 {
+  font-size: 36px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper1 .input-box {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 40px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+
+}
+
+.wrapper1 .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px 5px 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper1 .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  color: #333;
+  font-weight: 700;
+}
+
+.wrapper1 .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* login css part end  */
+
+
+
+
+/* about us css part start */
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+.container_about {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+}
+
+
+
+@media screen and (min-width:400px) and (max-width:2300px) {
+  .gallery-item {
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+
+  .gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+    cursor: pointer;
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.15);
+    cursor: pointer;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+@media screen and (min-width:200px) and (max-width:400px) {
+  .gallery-image {
+    display: block;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 400ms ease-out;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:350px) {
+  .gallery-item {
+    flex: 1 0 24rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    width: 300px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width:380px) {
+  .gallery-item {
+    flex: 1 0 24rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    width: 350px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width:380px) and (max-width:400px) {
+  .gallery-item {
+    flex: 1 0 24rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    width: 350px;
+    overflow: hidden;
+  }
+}
+
+.about_img {
+  transition: transform 400ms ease-out;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.about_img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+/* about section css end  */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap"); */
+/* $color-gray: #515151; */
+/* $color-black: #000; */
+
+
+.form-main {
+  background: linear-gradient(to bottom, #00000024, #00000024),
+    url(../public/images/carousel_img5.jpg) no-repeat center;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: white;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  .main-wrapper {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 45px;
+    width: 40%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    border:  1px solid white;
+    @media screen and (max-width: 991px) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
+
+    .form-head {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0px 0 25px;
+    }
+
+    .form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+
+      .form-card {
+        position: relative;
+        width: 100%;
+
+        .form-input {
+          padding: 20px 25px 15px;
+          width: 100%;
+          border: 1px solid white;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+          box-sizing: border-box;
+
+          &:valid,
+          &:focus {
+            border: 1px solid white;
+          }
+
+          &:valid~.form-label,
+          &:focus~.form-label {
+            color: white;
+            top: 30%;
+            transform: translateY(-70%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        .form-label {
+          position: absolute;
+          left: 25px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+
+        .form-textarea {
+          padding: 20px 25px 15px;
+          width: 100%;
+          border: 1px solid white;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          resize: none;
+          box-sizing: border-box;
+
+          &:valid,
+          &:focus {
+            border: 1px solid white;
+          }
+
+          &:valid~.form-textarea-label,
+          &:focus~.form-textarea-label {
+            color: white;
+            top: 18%;
+            transform: translateY(-82%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+        }
+
+        .form-textarea-label {
+          position: absolute;
+          left: 25px;
+          top: 30%;
+          transform: translateY(-70%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-wrap button {
+  padding: 0 32px;
+  font-size: 18px;
+  line-height: 48px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px #00000020;
+}
+
+.btn-wrap button:hover {
+  border: 1px solid #000;
+  background: transparent;
+
 }
